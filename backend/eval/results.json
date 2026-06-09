@@ -1,0 +1,1940 @@
+{
+  "retrieval": {
+    "k": 8,
+    "n_questions": 50,
+    "hit_rate": 0.98,
+    "mean_precision": 0.69,
+    "mrr": 0.955
+  },
+  "generation": {
+    "n_questions": 50,
+    "faithfulness": 4.8,
+    "relevance": 4.86,
+    "completeness": 4.58,
+    "overall": 4.746666666666666,
+    "pass_rate": 0.88
+  },
+  "classifier": {
+    "threshold": 4.0,
+    "n_labeled": 42,
+    "tp": 37,
+    "tn": 0,
+    "fp": 0,
+    "fn": 5,
+    "tpr": 0.8809523809523809,
+    "tnr": null,
+    "accuracy": 0.8809523809523809,
+    "detail": [
+      {
+        "question_id": "q01",
+        "question": "¿Qué tres tipos de proximidad a una línea eléctrica aérea se distinguen al valorar el riesgo de contacto con elementos de altura según la NTP 72?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q02",
+        "question": "¿Qué porcentaje de los 280 accidentes en líneas de alta tensión registrados en España durante 1978-1982 se debieron a trabajos con elementos de altura, según la NTP 72?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q03",
+        "question": "¿Qué tres categorías de duración de los trabajos con elementos de altura se establecen en la NTP 72?",
+        "overall": 3.67,
+        "verdict": 0,
+        "judge_good": false,
+        "judge_good_threshold": false,
+        "human_good": true,
+        "outcome": "FN",
+        "faults": [
+          "MISSING_FACT: Definition of 'Trabajo permanente' is incomplete. The reference specifies it as 'conjunto de operaciones en un emplazamiento durante un periodo largo e indefinido' but the candidate only acknowledges its existence without providing this definition."
+        ]
+      },
+      {
+        "question_id": "q04",
+        "question": "¿Cuál es la distancia mínima que debe haber entre las partes más salientes de una grúa torre y los obstáculos más próximos según la NTP 125?",
+        "overall": 3.67,
+        "verdict": 0,
+        "judge_good": false,
+        "judge_good_threshold": false,
+        "human_good": true,
+        "outcome": "FN",
+        "faults": [
+          "CONTRADICTS_REFERENCE"
+        ]
+      },
+      {
+        "question_id": "q06",
+        "question": "¿A partir de qué velocidad de viento no debe utilizarse una grúa torre según la NTP 125?",
+        "overall": 1.67,
+        "verdict": 0,
+        "judge_good": false,
+        "judge_good_threshold": false,
+        "human_good": true,
+        "outcome": "FN",
+        "faults": [
+          "MISSING_FACT: The reference specifies 60 km/h as the minimum wind speed threshold for tower cranes per NTP 125, but the candidate does not provide this specific value",
+          "MISSING_FACT: The candidate does not cite NTP 125 as the authoritative source, despite the question explicitly asking about it",
+          "CONTRADICTS_REFERENCE: The candidate cites 50 km/h from source [1] as the threshold for tower cranes, but the reference answer specifies 60 km/h per NTP 125"
+        ]
+      },
+      {
+        "question_id": "q07",
+        "question": "¿Qué grado de protección IP mínimo debe tener el cuadro general de mando y protección de tipo intemperie en una instalación eléctrica de obra según la NTP 271?",
+        "overall": 3.0,
+        "verdict": 0,
+        "judge_good": false,
+        "judge_good_threshold": false,
+        "human_good": true,
+        "outcome": "FN",
+        "faults": [
+          "CONTRADICTS_REFERENCE"
+        ]
+      },
+      {
+        "question_id": "q09",
+        "question": "¿Cuál es la tensión máxima de seguridad permitida para trabajos en locales considerados como mojados según la NTP 271?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q10",
+        "question": "¿Qué colores normalizados se utilizan para las tomas de corriente según la tensión en una instalación eléctrica de obra (220 V, 380 V y 24 V) según la NTP 271?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q12",
+        "question": "¿A qué velocidad de viento debe emitir el anemómetro de una grúa torre sonido intermitente y sonido continuo según la NTP 701?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q13",
+        "question": "¿Cuál es el espacio libre mínimo que debe existir entre las partes más salientes de una grúa torre y cualquier obstáculo para el paso de personal según la NTP 701?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q15",
+        "question": "¿A partir de qué capacidad nominal o momento neto máximo de elevación es obligatorio que una grúa hidráulica articulada sobre camión disponga de limitador de capacidad nominal según la NTP 868?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q18",
+        "question": "¿Cuál es la longitud máxima y la anchura mínima de la plataforma de un andamio colgado móvil de accionamiento manual según la NTP 969?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q19",
+        "question": "¿Qué alturas mínimas deben tener la barandilla, la barra intermedia y los rodapiés en la plataforma de un andamio colgado móvil según la NTP 969?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q20",
+        "question": "¿Cuál es el factor de seguridad mínimo exigido a los dispositivos de anclaje de un andamio colgado móvil según la NTP 969?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q21",
+        "question": "¿Cuál es la velocidad máxima del viento permitida para utilizar un andamio colgado móvil de accionamiento manual según la NTP 970?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q22",
+        "question": "¿Cuál es el coeficiente de seguridad exigido a los contrapesos en la cola de los pescantes de un andamio colgado, y qué fórmula deben cumplir según la NTP 970?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q24",
+        "question": "¿Cuál es el diámetro del cable y el coeficiente de seguridad del cable utilizado en los aparatos de elevación de un andamio colgado según la NTP 971?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q25",
+        "question": "¿En qué condiciones debe sustituirse el cable de un aparato de elevación de un andamio colgado por desgaste o deformación según la NTP 971?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q26",
+        "question": "¿Qué tipo de aceite se debe utilizar para engrasar el aparato de elevación de un andamio colgado según la NTP 971?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q27",
+        "question": "¿Qué Nota Técnica de Prevención previa sustituye y actualiza la NTP 1077 sobre grúas móviles autopropulsadas?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q28",
+        "question": "¿Cuáles son las distancias mínimas de seguridad a líneas eléctricas aéreas en función de la tensión nominal para una grúa móvil autopropulsada según la NTP 1077?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q29",
+        "question": "¿Con qué periodicidad mínima deben realizarse las revisiones obligatorias de una grúa móvil autopropulsada y de sus elementos auxiliares según la NTP 1077?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q30",
+        "question": "¿Cuál es la duración mínima del curso de formación del operador de grúa móvil autopropulsada cuando desarrolla su actividad en el sector de la construcción, según la NTP 1077?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q31",
+        "question": "¿Qué tres tipos de sistemas de protección individual contra caídas se establecen en la norma UNE-EN 363:2018 y cómo se diferencian en su finalidad?",
+        "overall": 3.0,
+        "verdict": 0,
+        "judge_good": false,
+        "judge_good_threshold": false,
+        "human_good": true,
+        "outcome": "FN",
+        "faults": [
+          "MISSING_FACT: No mention of the 6 kN limit for systems of retention or restraint",
+          "MISSING_FACT: No reference to NTP 1204, NTP 1205, or NTP 1218 as cited in the reference answer",
+          "MISSING_FACT: No explanation of how systems of restraint work (restricting displacement to prevent reaching the risk zone)",
+          "MISSING_FACT: No mention that systems of restraint are 'not designed to stop the fall'",
+          "CONTRADICTS_REFERENCE: The candidate states systems of restraint 'prevent free fall by preventing the worker from reaching zones where there is risk of fall', but the reference indicates restraint systems work by restricting displacement so the worker does not reach the risk zone—a subtle but important distinction in mechanism"
+        ]
+      },
+      {
+        "question_id": "q32",
+        "question": "¿Qué tipos de conectores se establecen en la norma UNE-EN 362:2005 para los sistemas de protección individual contra caídas?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q33",
+        "question": "¿Con qué periodicidad mínima debe llevarse a cabo la revisión periódica de los EPI contra caídas de altura según la norma UNE-EN 365:2005?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q35",
+        "question": "¿Qué marca distintiva identifica a los cinturones que solo pueden ser usados para sistemas de retención según la NTP 1205 y la UNE-EN 358:2018?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q36",
+        "question": "¿Cuál es la fuerza máxima de impacto que un sistema anticaídas debe limitar sobre el cuerpo del trabajador según la NTP 1218?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q37",
+        "question": "¿Qué Nota Técnica de Prevención previa sustituye la NTP 1218 sobre sistemas anticaídas?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q38",
+        "question": "¿Cómo deben estar marcados los elementos de enganche anticaídas de un arnés anticaídas según la UNE-EN 361:2002 mencionada en la NTP 1218?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q39",
+        "question": "¿Cuáles son las superficies mínimas exigidas de material de fondo y de material retrorreflectante para una prenda de ropa de alta visibilidad de Clase 3 según la NTP 1219?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q40",
+        "question": "¿Qué clase de ropa de alta visibilidad se recomienda para un \"usuario de carretera pasivo\" cuando los vehículos circulan a velocidad superior a 60 km/h según la NTP 1219?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q41",
+        "question": "¿Qué Nota Técnica de Prevención previa sustituye la NTP 1219 sobre ropa de protección de alta visibilidad?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q42",
+        "question": "¿Qué Nota Técnica de Prevención previa sustituye la NTP 1222 sobre sistemas de protección de borde?",
+        "overall": 4.67,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q43",
+        "question": "¿A partir de qué altura de caída es obligatorio proteger un desnivel mediante barandillas u otro sistema de protección colectiva equivalente según la normativa española?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q44",
+        "question": "¿Cuál es la altura mínima de las barreras de protección (barandillas, petos o antepechos) según el CTE cuando la diferencia de cota es menor o igual a 6 m, y cuando es mayor?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q45",
+        "question": "¿Qué fuerza horizontal mínima deben resistir las barandillas en zonas de aglomeraciones (Categoría de uso C5) según el CTE DB SE-AE?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q46",
+        "question": "¿Qué fuerza horizontal mínima deben resistir los parapetos, petos o barandillas que delimitan áreas accesibles para vehículos en zonas de tráfico y aparcamiento, según el CTE?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q47",
+        "question": "¿Por qué esfera de qué diámetro no deben poder ser atravesadas las aberturas de una barandilla en zonas residenciales según el CTE, y cuál es el límite para zonas de uso público?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q48",
+        "question": "¿Cuál es la distancia máxima entre el pasamanos y el listón intermedio (o entre éste y el rodapié) en una barandilla, y cuál es el espacio libre máximo entre montantes verticales si se usan barras verticales en lugar de listones intermedios?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q49",
+        "question": "¿Cuál es la altura mínima del rodapié de una barandilla industrial y su separación máxima respecto del nivel de circulación según las normas citadas en la NTP 1224?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      },
+      {
+        "question_id": "q50",
+        "question": "¿Cuál es la distancia máxima entre montantes en una barandilla, y cuál es el diámetro recomendado de los pasamanos para permitir un buen agarre de la mano según la NTP 1224?",
+        "overall": 5.0,
+        "verdict": 1,
+        "judge_good": true,
+        "judge_good_threshold": true,
+        "human_good": true,
+        "outcome": "TP",
+        "faults": []
+      }
+    ]
+  },
+  "per_question": [
+    {
+      "question_id": "q01",
+      "question": "¿Qué tres tipos de proximidad a una línea eléctrica aérea se distinguen al valorar el riesgo de contacto con elementos de altura según la NTP 72?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.75,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_072.pdf",
+        "ntp-1077.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp-1077.pdf",
+        "ntp_072.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_072.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer correctly identifies and defines all three types of proximity (inmediata, media, remota) with precise wording directly traceable to the retrieved sources. Every claim is grounded in NTP 72, and the answer fully addresses the question with no material omissions or errors."
+    },
+    {
+      "question_id": "q02",
+      "question": "¿Qué porcentaje de los 280 accidentes en líneas de alta tensión registrados en España durante 1978-1982 se debieron a trabajos con elementos de altura, según la NTP 72?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.875,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_701.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_072.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately cites the 45% figure from the retrieved source (NTP 072, page 1), correctly identifies the sample size (280 accidents), the time period (1978-1982), the location (Spain), and the context (high-voltage installations). All claims are grounded in the sources and match the reference answer precisely."
+    },
+    {
+      "question_id": "q03",
+      "question": "¿Qué tres categorías de duración de los trabajos con elementos de altura se establecen en la NTP 72?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.875,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "ntp_072.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_072.pdf"
+      ],
+      "faithfulness": 4,
+      "relevance": 4,
+      "completeness": 3,
+      "overall": 3.6666666666666665,
+      "verdict": 0,
+      "faults": [
+        "MISSING_FACT: Definition of 'Trabajo permanente' is incomplete. The reference specifies it as 'conjunto de operaciones en un emplazamiento durante un periodo largo e indefinido' but the candidate only acknowledges its existence without providing this definition."
+      ],
+      "rationale": "The candidate correctly identifies and defines two of the three categories with supporting examples from the sources, but fails to provide the complete definition of 'Trabajo permanente,' which is a key fact present in the reference answer. This material omission prevents the answer from fully addressing the question."
+    },
+    {
+      "question_id": "q04",
+      "question": "¿Cuál es la distancia mínima que debe haber entre las partes más salientes de una grúa torre y los obstáculos más próximos según la NTP 125?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.125,
+      "reciprocal_rank": 0.25,
+      "retrieved_sources": [
+        "ntp_701.pdf",
+        "ntp-1077.pdf",
+        "ntp_701.pdf",
+        "ntp_125.pdf",
+        "ntp_701.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp_701.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_125.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 1,
+      "overall": 3.6666666666666665,
+      "verdict": 0,
+      "faults": [
+        "CONTRADICTS_REFERENCE"
+      ],
+      "rationale": "The candidate answer is well-grounded in the retrieved sources (NTP 701, page 9) and correctly cites the 0.6 m width and 2.50 m height requirements. However, it directly contradicts the reference answer, which specifies a minimum distance of 70 cm (0.7 m), not 0.6 m. This material discrepancy makes the answer fail despite its good sourcing and relevance."
+    },
+    {
+      "question_id": "q05",
+      "question": "¿Cuál es la resistencia máxima admisible de la puesta a tierra de una grúa torre y qué sensibilidad debe tener el interruptor diferencial asociado?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.375,
+      "reciprocal_rank": 0.5,
+      "retrieved_sources": [
+        "ntp_271.pdf",
+        "ntp_701.pdf",
+        "ntp_271.pdf",
+        "ntp_701.pdf",
+        "ntp_701.pdf",
+        "ntp_271.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_125.pdf",
+        "ntp_701.pdf"
+      ],
+      "faithfulness": 4,
+      "relevance": 3,
+      "completeness": 2,
+      "overall": 3.0,
+      "verdict": 0,
+      "faults": [
+        "MISSING_FACT: Maximum resistance value of 80 ohms not provided",
+        "NOT_SUPPORTED: The candidate states that the specific maximum resistance value is not in the retrieved sources, but the reference answer cites NTP 125 which is not present in the retrieved sources"
+      ],
+      "rationale": "The candidate correctly identifies the 300 mA differential switch sensitivity requirement and grounds it in the retrieved sources. However, it fails to provide the critical maximum resistance value of 80 ohms specified in the reference answer, and acknowledges that this information is not in the provided documents. The answer is incomplete on a key quantitative requirement and does not cite NTP 125, which is the authoritative source for tower crane grounding specifications."
+    },
+    {
+      "question_id": "q06",
+      "question": "¿A partir de qué velocidad de viento no debe utilizarse una grúa torre según la NTP 125?",
+      "k": 8,
+      "hit": 0,
+      "precision_at_k": 0.0,
+      "reciprocal_rank": 0,
+      "retrieved_sources": [
+        "868w.pdf",
+        "ntp_701.pdf",
+        "ntp-970w.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp_701.pdf",
+        "ntp-1077.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_125.pdf"
+      ],
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 1,
+      "overall": 1.6666666666666667,
+      "verdict": 0,
+      "faults": [
+        "MISSING_FACT: The reference specifies 60 km/h as the minimum wind speed threshold for tower cranes per NTP 125, but the candidate does not provide this specific value",
+        "MISSING_FACT: The candidate does not cite NTP 125 as the authoritative source, despite the question explicitly asking about it",
+        "CONTRADICTS_REFERENCE: The candidate cites 50 km/h from source [1] as the threshold for tower cranes, but the reference answer specifies 60 km/h per NTP 125"
+      ],
+      "rationale": "The candidate refuses to answer directly, citing lack of context, and then provides conflicting information (50 km/h from source [1]) that contradicts the reference answer (60 km/h per NTP 125). The candidate fails to provide the specific regulatory threshold required by the question and does not cite the correct NTP standard."
+    },
+    {
+      "question_id": "q07",
+      "question": "¿Qué grado de protección IP mínimo debe tener el cuadro general de mando y protección de tipo intemperie en una instalación eléctrica de obra según la NTP 271?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_271.pdf"
+      ],
+      "faithfulness": 2,
+      "relevance": 5,
+      "completeness": 2,
+      "overall": 3.0,
+      "verdict": 0,
+      "faults": [
+        "CONTRADICTS_REFERENCE"
+      ],
+      "rationale": "The candidate states the protection grade as IP.55, but the reference answer and source [1] clearly specify IP.557. This is a material contradiction of a specific technical requirement. While the candidate correctly identifies the type (estanco, against water spray and dust) and cites the source, the core numerical specification is incorrect."
+    },
+    {
+      "question_id": "q08",
+      "question": "¿Qué sensibilidades deben tener los interruptores diferenciales para los circuitos de fuerza y de alumbrado en una instalación eléctrica de obra según la NTP 271?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.875,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_271.pdf",
+        "ntp_701.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_271.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate correctly identifies both required sensitivities (300 mA for power circuits and 30 mA for lighting circuits) with proper source citations, and adds relevant context about grounding requirements. All claims are directly traceable to the retrieved sources and align perfectly with the reference answer."
+    },
+    {
+      "question_id": "q09",
+      "question": "¿Cuál es la tensión máxima de seguridad permitida para trabajos en locales considerados como mojados según la NTP 271?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.75,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp-1077.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_701.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_271.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate correctly identifies the maximum safety voltage of 24 voltios for wet environments and cites NTP 271 with proper source attribution. All claims are directly traceable to the retrieved sources, and the answer includes the key detail about the safety transformer. The response fully addresses the question with no material omissions or errors."
+    },
+    {
+      "question_id": "q10",
+      "question": "¿Qué colores normalizados se utilizan para las tomas de corriente según la tensión en una instalación eléctrica de obra (220 V, 380 V y 24 V) según la NTP 271?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf",
+        "ntp_271.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_271.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate correctly identifies all three normalized colors (Azul/220 V, Rojo/380 V, Violeta/24 V) directly from the retrieved source NTP 271, page 3. The answer is fully grounded in the sources, complete, and directly addresses the question with no omissions or errors."
+    },
+    {
+      "question_id": "q11",
+      "question": "¿Con qué periodicidad debe comprobarse el correcto funcionamiento del interruptor diferencial de una grúa torre y qué sensibilidad mínima debe tener?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.625,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_701.pdf",
+        "ntp_271.pdf",
+        "ntp_125.pdf",
+        "ntp_271.pdf",
+        "ntp_701.pdf",
+        "ntp_701.pdf",
+        "ntp_701.pdf",
+        "ntp_271.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_125.pdf",
+        "ntp_701.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate correctly identifies both required facts: the 300 mA minimum sensitivity and the monthly checking frequency. Both claims are directly traceable to the retrieved sources (NTP 701, page 11), and the answer provides appropriate context about the differential switch's role in electrical protection systems."
+    },
+    {
+      "question_id": "q12",
+      "question": "¿A qué velocidad de viento debe emitir el anemómetro de una grúa torre sonido intermitente y sonido continuo según la NTP 701?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.5,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_701.pdf",
+        "ntp_701.pdf",
+        "868w.pdf",
+        "ntp_701.pdf",
+        "ntp-1077.pdf",
+        "ntp_701.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_701.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses all aspects of the question, providing both wind speed thresholds (50 km/h for intermittent sound and 70 km/h for continuous sound) with proper citations to NTP 701. It also includes the important operational requirement to suspend work when continuous sound is emitted, which is a key safety measure from the reference answer."
+    },
+    {
+      "question_id": "q13",
+      "question": "¿Cuál es el espacio libre mínimo que debe existir entre las partes más salientes de una grúa torre y cualquier obstáculo para el paso de personal según la NTP 701?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.5,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_701.pdf",
+        "ntp_701.pdf",
+        "ntp_701.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "ntp_701.pdf",
+        "ntp_125.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "ntp-1077.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_701.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately reproduces the key facts from the reference answer, citing both the specific dimensions (0.6 m width by 2.50 m height) and the prohibition of access when these measures cannot be maintained. All claims are properly grounded in the retrieved source (NTP 701, page 9)."
+    },
+    {
+      "question_id": "q14",
+      "question": "¿Con qué periodicidad deben realizarse las verificaciones periódicas de una grúa torre según la ITC-MIE-AEM2 mencionada en la NTP 701?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.5,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp_701.pdf",
+        "ntp_701.pdf",
+        "ntp-1077.pdf",
+        "ntp_125.pdf",
+        "ntp_701.pdf",
+        "ntp_701.pdf",
+        "971w.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf"
+      ],
+      "relevant_sources": [
+        "ntp_701.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses the question by citing both the 4-month periodic verification interval (ITC-MIE-AEM2 Art. 7) and the 2-year extraordinary inspection requirement (ITC-MIE-AEM2 Art. 11), with proper source attribution. All claims are grounded in the retrieved sources and match the reference answer completely."
+    },
+    {
+      "question_id": "q15",
+      "question": "¿A partir de qué capacidad nominal o momento neto máximo de elevación es obligatorio que una grúa hidráulica articulada sobre camión disponga de limitador de capacidad nominal según la NTP 868?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf"
+      ],
+      "relevant_sources": [
+        "868w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses the question by providing both required thresholds (1.000 Kg and 40.000 Nm) with proper citations to the retrieved sources. It correctly explains the obligation and adds relevant context about alternatives for smaller grúas, all grounded in the NTP 868 document."
+    },
+    {
+      "question_id": "q16",
+      "question": "¿En qué momento debe avisar el indicador de capacidad nominal de una grúa hidráulica articulada sobre camión al operador según la NTP 868?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf",
+        "868w.pdf"
+      ],
+      "relevant_sources": [
+        "868w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer is fully grounded in the retrieved sources, correctly identifies both alert moments (90% threshold and overcapacity), specifies the signal types (continuous visual or acoustic), and includes the applicability threshold (1,000 Kg or 40,000 Nm). It also adds relevant context about remote-control cranes. All claims are directly traceable to sources [1], [2], and [4]."
+    },
+    {
+      "question_id": "q17",
+      "question": "¿A partir de qué velocidad del viento no se puede garantizar la seguridad en el trabajo con una grúa hidráulica articulada sobre camión según la NTP 868?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.125,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "868w.pdf",
+        "ntp_701.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp_701.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf"
+      ],
+      "relevant_sources": [
+        "868w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses the question by citing the exact wind speed threshold (50 km/h) from NTP 868, specifying that safety cannot be guaranteed above this speed, and correctly stating the required actions (not starting or stopping the crane). All claims are grounded in the retrieved source [1] and match the reference answer completely."
+    },
+    {
+      "question_id": "q18",
+      "question": "¿Cuál es la longitud máxima y la anchura mínima de la plataforma de un andamio colgado móvil de accionamiento manual según la NTP 969?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.5,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "969w.pdf",
+        "ntp-970w.pdf",
+        "ntp-970w.pdf",
+        "ntp-970w.pdf",
+        "969w.pdf",
+        "969w.pdf",
+        "ntp-970w.pdf",
+        "969w.pdf"
+      ],
+      "relevant_sources": [
+        "969w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses all aspects of the question, citing NTP 969 and providing all key quantitative facts: maximum length (8 m with recommendation not to exceed 3 m), minimum width (0.50 m), and minimum load capacity (200 kg/m²). Every claim is grounded in the retrieved sources."
+    },
+    {
+      "question_id": "q19",
+      "question": "¿Qué alturas mínimas deben tener la barandilla, la barra intermedia y los rodapiés en la plataforma de un andamio colgado móvil según la NTP 969?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.125,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "969w.pdf",
+        "ntp_701.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "969w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately reproduces all three required height specifications from NTP 969 (0.90 m for barandilla, 0.50 m for barra intermedia, 0.15 m for rodapiés) and correctly notes that these protect all four perimeter sides. Every claim is traceable to the retrieved source [1]."
+    },
+    {
+      "question_id": "q20",
+      "question": "¿Cuál es el factor de seguridad mínimo exigido a los dispositivos de anclaje de un andamio colgado móvil según la NTP 969?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.625,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "969w.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "969w.pdf",
+        "969w.pdf",
+        "969w.pdf",
+        "971w.pdf",
+        "969w.pdf",
+        "ntp_701.pdf"
+      ],
+      "relevant_sources": [
+        "969w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately cites the required safety factor of 4 times the working load from NTP 969 [3], with proper source attribution and relevant context about anchor device placement. All claims are grounded in the retrieved sources and match the reference answer exactly."
+    },
+    {
+      "question_id": "q21",
+      "question": "¿Cuál es la velocidad máxima del viento permitida para utilizar un andamio colgado móvil de accionamiento manual según la NTP 970?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.375,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp-970w.pdf",
+        "868w.pdf",
+        "ntp-970w.pdf",
+        "ntp-1077.pdf",
+        "ntp-970w.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "971w.pdf"
+      ],
+      "relevant_sources": [
+        "ntp-970w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately cites the specific wind speed limit of 12.5 m/seg from NTP 970, correctly identifies it as a prohibition, and provides proper source attribution. All claims are grounded in the retrieved sources and match the reference answer exactly."
+    },
+    {
+      "question_id": "q22",
+      "question": "¿Cuál es el coeficiente de seguridad exigido a los contrapesos en la cola de los pescantes de un andamio colgado, y qué fórmula deben cumplir según la NTP 970?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.625,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp-970w.pdf",
+        "ntp-970w.pdf",
+        "969w.pdf",
+        "ntp-970w.pdf",
+        "969w.pdf",
+        "ntp-970w.pdf",
+        "969w.pdf",
+        "ntp-970w.pdf"
+      ],
+      "relevant_sources": [
+        "ntp-970w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and completely addresses the question by providing the required safety coefficient (3), the exact formula (P' l' > 3 Pl) with all variable definitions, and additional relevant requirements from NTP 970. Every claim is traceable to the retrieved sources and consistent with the reference answer."
+    },
+    {
+      "question_id": "q23",
+      "question": "¿Cuál es la masa mínima total de contrapesos que se debe colocar por pescante en un andamio colgado cuando no se pueden practicar taladros en el forjado, según la NTP 970?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.625,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp-970w.pdf",
+        "ntp-970w.pdf",
+        "ntp-970w.pdf",
+        "969w.pdf",
+        "969w.pdf",
+        "ntp-970w.pdf",
+        "969w.pdf",
+        "ntp-970w.pdf"
+      ],
+      "relevant_sources": [
+        "ntp-970w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses the question by stating the minimum mass of 500 kg per jib, with proper citations from NTP 970 sources [1] and [2]. All claims are grounded in the retrieved sources, and the answer includes relevant supporting details about the rigid base, solid construction materials, and proper distribution of counterweights, all of which are present in the reference answer and sources."
+    },
+    {
+      "question_id": "q24",
+      "question": "¿Cuál es el diámetro del cable y el coeficiente de seguridad del cable utilizado en los aparatos de elevación de un andamio colgado según la NTP 971?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.75,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "971w.pdf",
+        "971w.pdf",
+        "971w.pdf",
+        "971w.pdf",
+        "969w.pdf",
+        "971w.pdf",
+        "969w.pdf",
+        "971w.pdf"
+      ],
+      "relevant_sources": [
+        "971w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer correctly identifies both required values (8.3 mm diameter and safety coefficient of 8) directly from the retrieved sources, cites them appropriately, and provides additional relevant context about cable usage requirements. All claims are grounded in the sources and there are no material omissions or errors."
+    },
+    {
+      "question_id": "q25",
+      "question": "¿En qué condiciones debe sustituirse el cable de un aparato de elevación de un andamio colgado por desgaste o deformación según la NTP 971?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.625,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "971w.pdf",
+        "ntp_701.pdf",
+        "ntp-970w.pdf",
+        "971w.pdf",
+        "971w.pdf",
+        "971w.pdf",
+        "971w.pdf",
+        "969w.pdf"
+      ],
+      "relevant_sources": [
+        "971w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and comprehensively addresses the question by listing all five specific conditions for cable replacement from NTP 971 with exact quantitative details (12 hilos, 25 cm, 10% diameter reduction) and all types of deformations. Every claim is traceable to the retrieved sources, particularly source [1] from 971w.pdf page 5, and the answer is well-structured and complete."
+    },
+    {
+      "question_id": "q26",
+      "question": "¿Qué tipo de aceite se debe utilizar para engrasar el aparato de elevación de un andamio colgado según la NTP 971?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.625,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "971w.pdf",
+        "971w.pdf",
+        "ntp_701.pdf",
+        "971w.pdf",
+        "971w.pdf",
+        "ntp-970w.pdf",
+        "ntp-970w.pdf",
+        "971w.pdf"
+      ],
+      "relevant_sources": [
+        "971w.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and completely addresses the question by providing both required specifications: the correct oil types (SAE 90 or 120) and the explicit prohibition on oils/greases containing molybdenum disulfide or graphite additives. All claims are properly grounded in the retrieved source [1] from NTP 971."
+    },
+    {
+      "question_id": "q27",
+      "question": "¿Qué Nota Técnica de Prevención previa sustituye y actualiza la NTP 1077 sobre grúas móviles autopropulsadas?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.875,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "868w.pdf"
+      ],
+      "relevant_sources": [
+        "ntp-1077.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately identifies NTP 208 as the previous standard that NTP 1077 replaces and updates, and includes the key contextual fact that this update was based on technical safety aspects and the ITC MIE-AEM-4 legislation from 2003. All claims are properly sourced and match the reference answer exactly."
+    },
+    {
+      "question_id": "q28",
+      "question": "¿Cuáles son las distancias mínimas de seguridad a líneas eléctricas aéreas en función de la tensión nominal para una grúa móvil autopropulsada según la NTP 1077?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.5,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp_701.pdf",
+        "ntp-1077.pdf",
+        "ntp_701.pdf",
+        "ntp_701.pdf",
+        "ntp-1077.pdf",
+        "ntp_072.pdf"
+      ],
+      "relevant_sources": [
+        "ntp-1077.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly reproduces all five distance thresholds from Table 2 of NTP 1077 with exact precision, cites the correct standard, and includes relevant supplementary information about protective screens. Every claim is grounded in the retrieved sources and no material facts are omitted."
+    },
+    {
+      "question_id": "q29",
+      "question": "¿Con qué periodicidad mínima deben realizarse las revisiones obligatorias de una grúa móvil autopropulsada y de sus elementos auxiliares según la NTP 1077?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.375,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp-1077.pdf",
+        "ntp_701.pdf",
+        "ntp_125.pdf",
+        "ntp-1077.pdf",
+        "ntp_701.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "ntp-1077.pdf",
+        "868w.pdf"
+      ],
+      "relevant_sources": [
+        "ntp-1077.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and completely addresses the question by providing both required periodicities (six months for the mobile crane and six months for auxiliary elements), cites the correct standard (UNE 58-508-78), specifies the requirement for a conservadora company, and includes all key facts from the reference. Every claim is traceable to the retrieved sources [1]."
+    },
+    {
+      "question_id": "q30",
+      "question": "¿Cuál es la duración mínima del curso de formación del operador de grúa móvil autopropulsada cuando desarrolla su actividad en el sector de la construcción, según la NTP 1077?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf",
+        "ntp-1077.pdf"
+      ],
+      "relevant_sources": [
+        "ntp-1077.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses the question by providing the minimum course duration (50 hours) with proper context about the basic training level requirement and the applicable legal framework (Ley 31/1995, RD 39/1997). All claims are fully grounded in the retrieved sources and match the reference answer."
+    },
+    {
+      "question_id": "q31",
+      "question": "¿Qué tres tipos de sistemas de protección individual contra caídas se establecen en la norma UNE-EN 363:2018 y cómo se diferencian en su finalidad?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf"
+      ],
+      "faithfulness": 3,
+      "relevance": 4,
+      "completeness": 2,
+      "overall": 3.0,
+      "verdict": 0,
+      "faults": [
+        "MISSING_FACT: No mention of the 6 kN limit for systems of retention or restraint",
+        "MISSING_FACT: No reference to NTP 1204, NTP 1205, or NTP 1218 as cited in the reference answer",
+        "MISSING_FACT: No explanation of how systems of restraint work (restricting displacement to prevent reaching the risk zone)",
+        "MISSING_FACT: No mention that systems of restraint are 'not designed to stop the fall'",
+        "CONTRADICTS_REFERENCE: The candidate states systems of restraint 'prevent free fall by preventing the worker from reaching zones where there is risk of fall', but the reference indicates restraint systems work by restricting displacement so the worker does not reach the risk zone—a subtle but important distinction in mechanism"
+      ],
+      "rationale": "The candidate correctly identifies the three systems and provides accurate details about anticaídas systems (including the 6 kN limit), but omits critical differentiating facts about restraint and restraint systems, fails to cite the relevant NTP standards, and lacks the specific mechanisms that distinguish each system's purpose. The answer is incomplete and missing key regulatory references."
+    },
+    {
+      "question_id": "q32",
+      "question": "¿Qué tipos de conectores se establecen en la norma UNE-EN 362:2005 para los sistemas de protección individual contra caídas?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.625,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate correctly identifies all five connector types (A, B, Q, T, M) established by UNE-EN 362:2005 with their full names, directly matching the reference answer. All claims are grounded in the retrieved sources [1] and [2], and the answer includes appropriate context about their use in fall protection systems."
+    },
+    {
+      "question_id": "q33",
+      "question": "¿Con qué periodicidad mínima debe llevarse a cabo la revisión periódica de los EPI contra caídas de altura según la norma UNE-EN 365:2005?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.75,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "ntp-1077.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses the question by stating the minimum 12-month periodicity required by UNE-EN 365:2005, and correctly adds the essential complementary requirements (competent personnel, manufacturer instructions, pre- and post-use verification). All claims are grounded in the retrieved sources [1], and the answer is complete and consistent with the reference."
+    },
+    {
+      "question_id": "q34",
+      "question": "¿Cuál es la diferencia fundamental entre un sistema de retención y un sistema anticaídas según las NTP 1205 y 1218?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.875,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 4,
+      "overall": 4.666666666666667,
+      "verdict": 1,
+      "faults": [
+        "MISSING_FACT: The reference specifies that the anticaídas system limits impact force to a maximum of 6 kN, which is not mentioned in the candidate answer"
+      ],
+      "rationale": "The candidate correctly identifies and explains the fundamental differences between retention and fall-arrest systems using information directly from the retrieved sources. While it omits the specific 6 kN impact force limit mentioned in the reference, this is a secondary quantitative detail; the core conceptual distinction (prevention vs. arrest) is complete and accurate."
+    },
+    {
+      "question_id": "q35",
+      "question": "¿Qué marca distintiva identifica a los cinturones que solo pueden ser usados para sistemas de retención según la NTP 1205 y la UNE-EN 358:2018?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.625,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate correctly identifies the distinctive mark \"R\" as the identifier for retention-only belts per UNE-EN 358:2018, with direct citations from the retrieved sources. All claims are grounded in the sources, the answer fully addresses the question, and no material facts are omitted."
+    },
+    {
+      "question_id": "q36",
+      "question": "¿Cuál es la fuerza máxima de impacto que un sistema anticaídas debe limitar sobre el cuerpo del trabajador según la NTP 1218?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.875,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses the question by citing the maximum impact force of 6 kN from NTP 1218, and includes the complementary requirement about maintaining the person in suspension for rescue. All claims are grounded in the retrieved sources [1], and the answer is complete and consistent with the reference."
+    },
+    {
+      "question_id": "q37",
+      "question": "¿Qué Nota Técnica de Prevención previa sustituye la NTP 1218 sobre sistemas anticaídas?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.25,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1204 Sistemas de proteccion individual contra caidas sistemas de sujecion - Año 2024.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate correctly identifies that NTP 1218 replaces NTP 774, directly citing the source document with an exact quote. All key facts from the reference answer are present and accurately grounded in the retrieved sources."
+    },
+    {
+      "question_id": "q38",
+      "question": "¿Cómo deben estar marcados los elementos de enganche anticaídas de un arnés anticaídas según la UNE-EN 361:2002 mencionada en la NTP 1218?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.875,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1205 Sistemas de proteccion individual contra caidas sistemas de retencion - Año 2024.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf",
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1218 Sistemas de protección individual contra caídas Sistemas anticaídas - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly addresses the question by providing all key facts from the reference: the \"A\" marking requirement for each attachment element, the \"A/2\" marking for two-element connectors, and the model/type identification requirement. All claims are grounded in the retrieved sources (NTP 1218, pages 6 and 3), and the answer includes appropriate context about dorsal and pectoral positioning. There are no contradictions, omissions, or unsupported claims."
+    },
+    {
+      "question_id": "q39",
+      "question": "¿Cuáles son las superficies mínimas exigidas de material de fondo y de material retrorreflectante para una prenda de ropa de alta visibilidad de Clase 3 según la NTP 1219?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses the question by providing both required surface areas (0.80 m² for background material and 0.20 m² for retroreflective material) for Class 3 high-visibility clothing, with proper citation to NTP 1219. It also includes the important constraint that these minimum areas cannot be compromised by logos or labels, all of which are directly traceable to the retrieved sources."
+    },
+    {
+      "question_id": "q40",
+      "question": "¿Qué clase de ropa de alta visibilidad se recomienda para un \"usuario de carretera pasivo\" cuando los vehículos circulan a velocidad superior a 60 km/h según la NTP 1219?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate correctly identifies Clase 3 as the recommended high-visibility clothing class for passive road users when vehicles travel above 60 km/h, directly citing Table 4 of NTP 1219. All claims are grounded in the retrieved sources and the answer fully addresses the specific question asked."
+    },
+    {
+      "question_id": "q41",
+      "question": "¿Qué Nota Técnica de Prevención previa sustituye la NTP 1219 sobre ropa de protección de alta visibilidad?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf",
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1219 Ropa de protección de Alta Visibilidad - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately identifies that NTP 1219 updates and replaces NTP 718 on high-visibility signaling clothing, citing the exact source document. All claims are grounded in the retrieved sources and match the reference answer precisely."
+    },
+    {
+      "question_id": "q42",
+      "question": "¿Qué Nota Técnica de Prevención previa sustituye la NTP 1222 sobre sistemas de protección de borde?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.625,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 4,
+      "overall": 4.666666666666667,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate correctly identifies that NTP 1222 replaces NTP 123 Barandillas, which is directly stated in the retrieved source [1]. The answer is grounded, accurate, and addresses the question. The only minor omission is the publication year (1985) mentioned in the reference answer, which is not critical to answering the core question."
+    },
+    {
+      "question_id": "q43",
+      "question": "¿A partir de qué altura de caída es obligatorio proteger un desnivel mediante barandillas u otro sistema de protección colectiva equivalente según la normativa española?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.75,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "ntp_701.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer correctly identifies the 2-meter threshold for works/construction sites from RD 1627/1997 and the 55 cm threshold for buildings, with proper citations to the retrieved sources. It also appropriately notes that risk assessment may require protections below these thresholds, and distinguishes between different regulatory contexts, fully addressing the question."
+    },
+    {
+      "question_id": "q44",
+      "question": "¿Cuál es la altura mínima de las barreras de protección (barandillas, petos o antepechos) según el CTE cuando la diferencia de cota es menor o igual a 6 m, y cuando es mayor?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.75,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately addresses all aspects of the question, providing both height thresholds (90 cm for ≤6 m difference, 1.10 m for >6 m), the exception for stairwell openings <40 cm wide, and measurement methodology. All claims are grounded in the retrieved sources [1] and [5], with no omissions or contradictions relative to the reference answer."
+    },
+    {
+      "question_id": "q45",
+      "question": "¿Qué fuerza horizontal mínima deben resistir las barandillas en zonas de aglomeraciones (Categoría de uso C5) según el CTE DB SE-AE?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.75,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate correctly identifies the minimum horizontal force of 3.0 kN/m for C5 category (crowded areas) and properly cites the source [1]. It also includes the important detail about the height of application (1.2 m or at the upper edge if lower), which is directly traceable to the retrieved sources. All key facts from the reference are present and accurately stated."
+    },
+    {
+      "question_id": "q46",
+      "question": "¿Qué fuerza horizontal mínima deben resistir los parapetos, petos o barandillas que delimitan áreas accesibles para vehículos en zonas de tráfico y aparcamiento, según el CTE?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.625,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly and accurately reproduces all key quantitative requirements from the reference: the 50 kN/m force, the 1 m distribution length, the 1.2 m height of application, and the minimum threshold qk = 50 kN. All claims are properly grounded in the retrieved source [1], and the answer fully addresses the question with no omissions or contradictions."
+    },
+    {
+      "question_id": "q47",
+      "question": "¿Por qué esfera de qué diámetro no deben poder ser atravesadas las aberturas de una barandilla en zonas residenciales según el CTE, y cuál es el límite para zonas de uso público?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.75,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1222 Sistemas de protección de borde (I) Aspectos generales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer correctly identifies both sphere diameters (10 cm for residential zones and 15 cm for public-use zones), cites the appropriate sources, and includes the exception for triangular openings in stairs. All claims are directly traceable to the retrieved sources and align perfectly with the reference answer."
+    },
+    {
+      "question_id": "q48",
+      "question": "¿Cuál es la distancia máxima entre el pasamanos y el listón intermedio (o entre éste y el rodapié) en una barandilla, y cuál es el espacio libre máximo entre montantes verticales si se usan barras verticales en lugar de listones intermedios?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1223 Sistemas de protección de borde (II) SDPB en edificios clasificación y requisitos legales - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly addresses both parts of the question with all key facts from the reference: the 50 cm maximum distance between handrail, intermediate bar, and baseboard; the 18 cm maximum horizontal spacing for vertical bars; and additional relevant context about slope exceptions and montant spacing. All claims are properly grounded in the retrieved sources with appropriate citations."
+    },
+    {
+      "question_id": "q49",
+      "question": "¿Cuál es la altura mínima del rodapié de una barandilla industrial y su separación máxima respecto del nivel de circulación según las normas citadas en la NTP 1224?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 0.875,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "969w.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer correctly identifies all key quantitative requirements from the retrieved sources: the 10 cm minimum height, the 12 mm maximum separation from the circulation level, the 1 cm maximum separation when parallel to the edge, and the 2 cm maximum distance between discontinuous sections. All claims are directly traceable to the NTP 1224 document and the NF E 85-015:2019 standard cited within it."
+    },
+    {
+      "question_id": "q50",
+      "question": "¿Cuál es la distancia máxima entre montantes en una barandilla, y cuál es el diámetro recomendado de los pasamanos para permitir un buen agarre de la mano según la NTP 1224?",
+      "k": 8,
+      "hit": 1,
+      "precision_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_sources": [
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf",
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf"
+      ],
+      "relevant_sources": [
+        "NTP 1224 Sistemas de protección de borde (III) SDPB en edificios normas técnicas, métodos de evaluación y documentación - Año 2025.pdf"
+      ],
+      "faithfulness": 5,
+      "relevance": 5,
+      "completeness": 5,
+      "overall": 5.0,
+      "verdict": 1,
+      "faults": [],
+      "rationale": "The candidate answer directly addresses both aspects of the question with all key quantitative requirements from the reference: the 1.50 m maximum distance between uprights, the 25–50 mm diameter range for handrails, and the 75 mm minimum clearance. All claims are properly grounded in the retrieved sources with appropriate citations."
+    }
+  ]
+}

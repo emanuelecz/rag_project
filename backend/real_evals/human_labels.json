@@ -1,0 +1,86 @@
+[
+  {
+    "id": "q01_adv",
+    "faithfulness": 0,
+    "relevance": 1,
+    "completeness": 1
+  },
+  {
+    "id": "q04_adv",
+    "faithfulness": 0,
+    "relevance": 0,
+    "completeness": 0
+  },
+  {
+    "id": "q05_adv",
+    "faithfulness": 0,
+    "relevance": 1,
+    "completeness": 0
+  },
+  {
+    "id": "q08_adv",
+    "faithfulness": 0,
+    "relevance": 1,
+    "completeness": 0
+  },
+  {
+    "id": "q15_adv",
+    "faithfulness": 0,
+    "relevance": 1,
+    "completeness": 0
+  },
+  {
+    "id": "q20_adv",
+    "faithfulness": 0,
+    "relevance": 1,
+    "completeness": 1
+  },
+  {
+    "id": "q29_adv",
+    "faithfulness": 0,
+    "relevance": 1,
+    "completeness": 0
+  },
+  {
+    "id": "q43_adv",
+    "faithfulness": 0,
+    "relevance": 1,
+    "completeness": 0
+  },
+  {
+    "id": "q31_adv",
+    "faithfulness": 0,
+    "relevance": 1,
+    "completeness": 0
+  },
+  {
+    "id": "q46",
+    "faithfulness": 1,
+    "relevance": 1,
+    "completeness": 1
+  },
+  {
+    "id": "q44",
+    "faithfulness": 1,
+    "relevance": 1,
+    "completeness": 1
+  },
+  {
+    "id": "q02",
+    "faithfulness": 1,
+    "relevance": 1,
+    "completeness": 1
+  },
+  {
+    "id": "q06",
+    "faithfulness": 1,
+    "relevance": 0,
+    "completeness": 0
+  },
+  {
+    "id": "q12",
+    "faithfulness": 1,
+    "relevance": 1,
+    "completeness": 1
+  }
+]

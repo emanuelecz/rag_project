@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+html, body {
+  background: #0d1014;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+
+::-webkit-scrollbar       { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #2e3744; border-radius: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+::selection { background: rgba(200,153,104,0.18); color: #e8e6e0; }
+
+/* Markdown content styles */
+.ntp-md { color: #e8e6e0; line-height: 1.65; font-size: 15px; }
+.ntp-md p  { margin: 0 0 14px; }
+.ntp-md p:last-child { margin-bottom: 0; }
+.ntp-md h2 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.015em;
+  color: #f3f0e9;
+  margin: 26px 0 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.ntp-md h2::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 14px;
+  background: #c89968;
+  border-radius: 2px;
+  flex-shrink: 0;
+  transform: translateY(1px);
+}
+.ntp-md strong { color: #f1efe9; font-weight: 600; }
+.ntp-md ol, .ntp-md ul { margin: 0 0 14px; padding-left: 22px; }
+.ntp-md li { margin: 4px 0; }
+.ntp-md li::marker { color: #c89968; font-variant-numeric: tabular-nums; }
