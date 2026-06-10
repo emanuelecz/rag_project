@@ -1,5 +1,4 @@
-from re import search
-from langchain_community.retrievers import BM25Retriever 
+from langchain_community.retrievers import BM25Retriever
 from langchain.retrievers import EnsembleRetriever
 from langchain_core.documents import Document
 import voyageai

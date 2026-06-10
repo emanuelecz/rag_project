@@ -9,9 +9,9 @@ from backend.services.generate import generate_answer
 from backend.eval.retrieval_eval import evaluate_one_question, aggregate_results
 from backend.eval.judge import judge_answer, aggregate_judgments, compute_classifier_metrics
 
-DATASET_PATH      = Path(__file__).parent / "dataset.json"
-HUMAN_LABELS_PATH = Path(__file__).parent / "human_labels.json"
-RESULTS_PATH      = Path(__file__).parent / "results.json"
+DATASET_PATH      = Path(__file__).parent / "data" / "dataset.json"
+HUMAN_LABELS_PATH = Path(__file__).parent / "data" / "human_labels.json"
+RESULTS_PATH      = Path(__file__).parent / "data" / "results.json"
 K = 8
 
 

@@ -1,5 +1,7 @@
-import sys, json
-from real_evals.judge import judge_completeness, judge_faithfulness, judge_relevance
+import sys, json, os
+from backend.eval.meta_judge import judge_completeness, judge_faithfulness, judge_relevance
+
+_DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
 TARGET = 0.85
 DIMENSIONS = ["faithfulness", "relevance", "completeness"]
@@ -47,11 +49,10 @@ def _judge(r):
     }
 
 def run_meta_eval():
-    import os
-    results = {r["id"]: r for r in json.load(open("real_evals/dataset.json", encoding="utf-8"))}
-    labels  = json.load(open("real_evals/human_labels.json", encoding="utf-8"))
+    results = {r["id"]: r for r in json.load(open(os.path.join(_DATA_DIR, "dataset.json"), encoding="utf-8"))}
+    labels  = json.load(open(os.path.join(_DATA_DIR, "meta_labels.json"), encoding="utf-8"))
 
-    adv_path = "real_evals/adversarial_negatives.json"
+    adv_path = os.path.join(_DATA_DIR, "adversarial_negatives.json")
     adv_rows = {}
     if os.path.exists(adv_path):
         adv_rows = {r["id"]: r for r in json.load(open(adv_path, encoding="utf-8"))}
@@ -73,7 +74,7 @@ def run_meta_eval():
         for d in DIMENSIONS:
             if lab.get(d) is not None:
                 pairs[d].append((lab[d], verdicts[d].score))
-        with open("real_evals/meta_traces.jsonl", "a", encoding="utf-8") as f:
+        with open(os.path.join(_DATA_DIR, "meta_traces.jsonl"), "a", encoding="utf-8") as f:
             f.write(json.dumps({
                 "id": lab["id"],
                 **{d: {"human": lab.get(d), "judge": verdicts[d].score,
@@ -86,6 +87,6 @@ def run_meta_eval():
     return all_passed
 
 if __name__ == "__main__":
-    open("real_evals/meta_traces.jsonl", "w").close()
+    open(os.path.join(_DATA_DIR, "meta_traces.jsonl"), "w").close()
     ok = run_meta_eval()
     sys.exit(0 if ok else 1)   # nonzero exit → blocks CI if judge isn't trustworthy

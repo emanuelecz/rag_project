@@ -3,7 +3,7 @@ import os
 from backend.services.generate import generate_answer
 from backend.services.retrieval import retrieve_documents
 
-_DIR = os.path.dirname(__file__)
+_DIR = os.path.join(os.path.dirname(__file__), "data")
 
 def build_results(dataset_path=os.path.join(_DIR, "dataset.json"), out_path=os.path.join(_DIR, "dataset.json")):
     with open(dataset_path, encoding="utf-8") as f:

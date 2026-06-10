@@ -7,8 +7,8 @@ load_dotenv(Path(__file__).parent.parent / ".env")
 from backend.services.retrieval import retrieve_documents
 from backend.services.generate import generate_answer
 
-DATASET_PATH = Path(__file__).parent / "dataset.json"
-LABELS_PATH  = Path(__file__).parent / "human_labels.json"
+DATASET_PATH = Path(__file__).parent / "data" / "dataset.json"
+LABELS_PATH  = Path(__file__).parent / "data" / "human_labels.json"
 
 
 def save(labels_doc: dict):
