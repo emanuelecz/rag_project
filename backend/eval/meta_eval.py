@@ -89,4 +89,4 @@ def run_meta_eval():
 if __name__ == "__main__":
     open(os.path.join(_DATA_DIR, "meta_traces.jsonl"), "w").close()
     ok = run_meta_eval()
-    sys.exit(0 if ok else 1)   # nonzero exit → blocks CI if judge isn't trustworthy
+    sys.exit(0 if ok else 1)

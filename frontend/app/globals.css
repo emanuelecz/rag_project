@@ -17,7 +17,6 @@ html, body {
 
 ::selection { background: rgba(200,153,104,0.18); color: #e8e6e0; }
 
-/* Markdown content styles */
 .ntp-md { color: #e8e6e0; line-height: 1.65; font-size: 15px; }
 .ntp-md p  { margin: 0 0 14px; }
 .ntp-md p:last-child { margin-bottom: 0; }

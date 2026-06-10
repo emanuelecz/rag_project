@@ -1,0 +1,38 @@
+name: Eval Gate
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  threshold-gate:
+    name: Eval thresholds
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check eval thresholds against committed results.json
+        run: python backend/eval/check_thresholds.py
+
+  judge-quality:
+    name: Judge quality (meta-eval)
+    runs-on: ubuntu-latest
+    needs: threshold-gate
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install eval dependencies
+        run: pip install openai pydantic python-dotenv
+
+      - name: Run meta-eval — gate on judge TPR/TNR ≥ 85%
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: PYTHONPATH=. python -m backend.eval.meta_eval

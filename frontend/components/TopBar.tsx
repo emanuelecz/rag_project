@@ -12,7 +12,6 @@ interface Props {
 export default function TopBar({ lang, setLang, onNew, str }: Props) {
   return (
     <div className="flex items-center gap-3 px-4 py-3.5 md:px-7 md:py-4 border-b border-border bg-bg z-10 relative shrink-0">
-      {/* Logo + title */}
       <div className="flex items-center gap-2.5 flex-1 min-w-0">
         <div
           className="w-7 h-7 md:w-8 md:h-8 rounded-[7px] flex items-center justify-center text-bg shrink-0"
@@ -33,7 +32,6 @@ export default function TopBar({ lang, setLang, onNew, str }: Props) {
         </div>
       </div>
 
-      {/* Lang toggle */}
       <div
         className="inline-flex rounded-md p-0.5 border border-border shrink-0"
         style={{ background: '#14181f' }}
@@ -55,7 +53,6 @@ export default function TopBar({ lang, setLang, onNew, str }: Props) {
         ))}
       </div>
 
-      {/* New chat */}
       <button
         onClick={onNew}
         title={str.newChat}

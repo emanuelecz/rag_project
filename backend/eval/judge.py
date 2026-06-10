@@ -266,8 +266,8 @@ def compute_classifier_metrics(judge_rows, human_labels, threshold=3.5):
             continue
 
         human_good = bool(human_label)
-        judge_good = bool(row["verdict"])                    # primary: binary verdict
-        judge_good_threshold = row["overall"] >= threshold   # secondary diagnostic
+        judge_good = bool(row["verdict"])
+        judge_good_threshold = row["overall"] >= threshold
 
         if human_good and judge_good:
             tp += 1

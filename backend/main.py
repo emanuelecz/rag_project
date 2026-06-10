@@ -126,7 +126,7 @@ async def ingest():
 
     docs = await asyncio.to_thread(ingest_folder, REGULATIONS_PATH)
     n    = await asyncio.to_thread(chunk_and_ingest_docs, docs)
-    _suggestions_cache = None  # invalidate so next /suggestions call regenerates
+    _suggestions_cache = None
     return {"status": "ok", "chunks_stored": n}
 
 

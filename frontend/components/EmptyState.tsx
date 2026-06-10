@@ -17,7 +17,6 @@ export default function EmptyState({ lang, str, onPick, suggestions: dynamicSugg
 
   return (
     <div className="flex flex-col items-center justify-center min-h-full px-4 py-10 md:px-8 md:py-12 w-full max-w-2xl mx-auto">
-      {/* Glyph */}
       <div
         className="w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center text-accent mb-4 md:mb-5 border border-border-hi"
         style={{
@@ -40,14 +39,12 @@ export default function EmptyState({ lang, str, onPick, suggestions: dynamicSugg
         {str.sub}
       </p>
 
-      {/* Divider + label */}
       <div className="w-full flex items-center gap-3 mb-3">
         <div className="flex-1 h-px bg-border" />
         <span className="text-[10px] text-tx-faint font-mono tracking-[0.12em] uppercase">{str.sugg}</span>
         <div className="flex-1 h-px bg-border" />
       </div>
 
-      {/* Suggestion grid */}
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2.5">
         {suggestions.map((s, i) => (
           <button
