@@ -57,6 +57,14 @@ def judge_relevance(question: str, answer: str) -> JudgeVerdict:
     You are an expert auditor. Judge ONLY whether the Answer addresses the Question.
     Ignore whether it is factually correct — only whether it is on-topic.
 
+    Method — do this BEFORE scoring:
+    1. Identify the SPECIFIC thing the Question is asking for (a number, a procedure, a list
+       of named items, a definition, etc.).
+    2. Check whether the Answer actually provides that specific thing.
+    3. An answer that discusses a RELATED but DIFFERENT sub-topic (e.g. asks for distance X
+       but answer gives distance Y for a different scenario) counts as 0 — it is not enough
+       to be broadly on the same subject.
+
     [Question]
     {question}
 
@@ -64,8 +72,9 @@ def judge_relevance(question: str, answer: str) -> JudgeVerdict:
     {answer}
 
     Rubric:
-    1 (Pass): directly resolves the core intent of the Question.
-    0 (Fail): off-topic, dodges the question, or just restates it.
+    1 (Pass): directly and specifically resolves what the Question asks for.
+    0 (Fail): off-topic, dodges the question, restates it, or answers a related but
+              different sub-question.
 
     Write chain_of_thought BEFORE the score.
     """)
@@ -76,6 +85,16 @@ def judge_completeness(reference_answer: str, answer: str)-> JudgeVerdict:
     You are an expert auditor. Compare the Answer to the Reference (gold) Answer.
     Judge whether the Answer covers the key points present in the Reference.
 
+    Method — do this BEFORE scoring:
+    1. Extract every specific value from the Reference: numbers, distances, voltages,
+       force limits, percentages, regulatory codes (RD, NTP, UNE), named standards,
+       time limits, and named items.
+    2. For EACH extracted value, verify it appears in the Answer with the CORRECT value.
+       A wrong number (e.g. 8 kN instead of 6 kN) counts as a missing fact — presence
+       of the topic is not enough if the value is incorrect.
+    3. Check that no essential named item or regulatory citation from the Reference is
+       absent from the Answer.
+
     [Reference Answer]
     {reference_answer}
 
@@ -83,8 +102,9 @@ def judge_completeness(reference_answer: str, answer: str)-> JudgeVerdict:
     {answer}
 
     Rubric:
-    1 (Pass): covers all essential points of the Reference (extra detail is fine).
-    0 (Fail): omits one or more essential points of the Reference.
+    1 (Pass): covers all essential points AND all specific values match the Reference.
+    0 (Fail): omits one or more essential points, OR any specific value differs from
+              the Reference (wrong number, wrong code, wrong threshold).
 
     Write chain_of_thought BEFORE the score.
     """)
